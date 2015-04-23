@@ -18,7 +18,17 @@ app.get('/content', function(req, res){
 });
 
 app.get('/add', function(req, res){
-	res.render("add");
+	
+		var list =["Bucie:Easy to love.mp3", 
+		"Dj Merlon: Kuze kuse.mp3", 
+		"Naak musiq: Hamba kude.mp3", 
+		"Naima Kay: Elilanga lelam.mp3", 
+		"Mono T: Bayeza.mp3"
+		"Uhuru: Chilolo.mp3", 
+		"Dj Fisherman: No stress.mp3"];
+	
+	
+		res.render("add", list);
 });
 
 app.post('/add', function(req, res){
