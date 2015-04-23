@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<header></header>
+<head>
+	<title>BBC AUDIO</title>
+</head>
+<style>  
+                       
+                        #pretty{
+                                 width:300px;
+                                 height:230px;
+                                 background-color: blue;
+                                 margin-left: auto ;
+                                 margin-right: auto ;
+                                 }</style>
+<body>
+<div id="pretty">
+<table>
+<form name="myform" action="#" method="POST">
+<div align="center"><br>
+<h2>My Content/Audio</h2>
+{{#each list}}
+<input type="checkbox" name="option1" value="Audio 1"> <a href="#">{{this.name}}</a><br>
+{{/each}}
+<br>
+</div>
+</form>
+<a href="add"><button>Add content</button></a>
+<a href="users"><button>Share</button></a>
+</table>
+</div>	
+</body>
+</html>
